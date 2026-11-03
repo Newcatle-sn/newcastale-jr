@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Adama LO — Cybersecurity portfolio covering SOC operations, incident investigation, CTF write-ups and penetration testing.">
+  <meta name="theme-color" content="#0b1220">
+  <title>Adama LO | Cybersecurity Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Adama LO home"><span class="brand-mark">A<span>.</span></span><span>ADAMA LO</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#about">About</a><a href="#soc">SOC</a><a href="#writeups">CTF Write-ups</a><a href="#pentest">Pentesting</a><a href="#contact" class="nav-contact">Contact ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> CYBERSECURITY PORTFOLIO <span class="eyebrow-line"></span> 2026</div>
+        <p class="hero-kicker">Hello, I'm</p>
+        <h1>Adama <span>LO.</span></h1>
+        <h2>Security Analyst <span class="muted">/</span> Penetration Tester</h2>
+        <p class="hero-description">I investigate security events, explore attack techniques and build practical skills through hands-on labs, CTF challenges and cybersecurity projects.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span>↘</span></a>
+          <a class="button button-ghost" href="#contact">Get in touch <span>↗</span></a>
+        </div>
+        <div class="hero-meta"><span><i></i> Open to cybersecurity opportunities</span><span class="mono">DAKAR, SENEGAL</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="visual-top"><span>SECURITY_CONSOLE</span><span class="window-dots">● ● ●</span></div>
+        <div class="terminal">
+          <div><span class="prompt">adama@cyberlab</span>:<span class="path">~</span>$ whoami</div>
+          <p class="terminal-output">security analyst | continuous learner</p>
+          <div><span class="prompt">adama@cyberlab</span>:<span class="path">~</span>$ focus --areas</div>
+          <p class="terminal-output">[+] SOC & Threat Detection<br>[+] Incident Investigation<br>[+] Network Security<br>[+] Penetration Testing</p>
+          <div><span class="prompt">adama@cyberlab</span>:<span class="path">~</span>$ <span class="cursor"></span></div>
+        </div>
+        <div class="visual-footer"><span>LAB STATUS</span><span class="online">● ACTIVE LEARNING</span></div>
+        <div class="floating-chip chip-one">SIEM <b>↗</b></div><div class="floating-chip chip-two">CTF <b>↗</b></div>
+      </div>
+      <a class="scroll-cue" href="#about">SCROLL TO EXPLORE <span>↓</span></a>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-heading"><span class="section-index">01 / ABOUT</span><h2>Curiosity drives <span>security.</span></h2></div>
+      <div class="about-grid">
+        <div><p class="lead">I am a cybersecurity professional with a background in Mathematics and Computer Science and a strong interest in security operations and offensive security.</p><p>I develop my skills through continuous learning, hands-on labs and practical projects. I enjoy understanding how attacks work, identifying suspicious activity and turning technical findings into clear investigations.</p><a class="text-link" href="#contact">Let's connect <span>↗</span></a></div>
+        <div class="facts-panel">
+          <div class="fact"><span class="fact-label">CERTIFICATION</span><strong>CompTIA Security+</strong><span class="fact-note">Core cybersecurity knowledge</span></div>
+          <div class="fact"><span class="fact-label">LEARNING PLATFORMS</span><strong>TryHackMe · Cisco NetAcad</strong><span class="fact-note">Hands-on labs and guided learning</span></div>
+          <div class="fact"><span class="fact-label">APPROACH</span><strong>Autodidact & critical thinker</strong><span class="fact-note">Evidence-driven and continuous improvement</span></div>
+        </div>
+      </div>
+      <div class="skills-strip"><span>AREAS OF INTEREST</span><div><b>SOC Operations</b><b>SIEM Analysis</b><b>Incident Response</b><b>Network Security</b><b>Web Security</b><b>Penetration Testing</b></div></div>
+    </section>
+
+    <section class="section dark-section" id="projects">
+      <div class="section-heading"><span class="section-index">02 / SELECTED WORK</span><h2>From alerts to <span>insights.</span></h2><p>Practical work that demonstrates investigation, detection and technical problem-solving.</p></div>
+      <div class="project-grid">
+        <article class="project-card" id="soc"><div class="card-top"><span class="card-icon">◈</span><span class="card-type">BLUE TEAM / HOMELAB</span></div><h3>SOC Home Lab</h3><p>A hands-on environment to explore log collection, security monitoring, alert investigation and network visibility.</p><div class="tag-list"><span>ELK</span><span>Active Directory</span><span>Suricata</span><span>pfSense</span></div><a href="#contact" class="card-link">Project details coming soon <span>↗</span></a></article>
+        <article class="project-card"><div class="card-top"><span class="card-icon">⌁</span><span class="card-type">DETECTION / INVESTIGATION</span></div><h3>Security Investigations</h3><p>Analysis of Windows and Sysmon events, suspicious process activity, authentication events and network indicators.</p><div class="tag-list"><span>Windows Logs</span><span>Sysmon</span><span>SIEM</span><span>MITRE ATT&CK</span></div><a href="#writeups" class="card-link">Explore investigations <span>↗</span></a></article>
+        <article class="project-card" id="pentest"><div class="card-top"><span class="card-icon">⌘</span><span class="card-type">OFFENSIVE SECURITY</span></div><h3>Penetration Testing Labs</h3><p>Authorized lab exercises focused on reconnaissance, enumeration, vulnerability analysis and exploitation fundamentals.</p><div class="tag-list"><span>Web Security</span><span>Linux</span><span>Networking</span><span>Active Directory</span></div><a href="#writeups" class="card-link">View CTF write-ups <span>↗</span></a></article>
+      </div>
+    </section>
+
+    <section class="section writeups-section" id="writeups">
+      <div class="section-heading"><span class="section-index">03 / KNOWLEDGE BASE</span><h2>CTF <span>write-ups.</span></h2><p>Documenting the methodology, evidence and lessons learned from cybersecurity challenges.</p></div>
+      <div class="writeup-toolbar"><div class="filter-group" role="group" aria-label="Filter write-ups"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="tryhackme">TryHackMe</button><button class="filter" data-filter="htb">Hack The Box</button><button class="filter" data-filter="other">Other</button></div><span class="writeup-count" id="writeupCount">3 ARTICLES</span></div>
+      <div class="writeup-grid" id="writeupGrid">
+        <article class="writeup-card" data-platform="tryhackme"><div class="writeup-meta"><span>TRYHACKME</span><span>BLUE TEAM</span></div><h3>Repossessed — SOC investigation</h3><p>A structured investigation write-up. Add your challenge context, evidence, timeline and conclusions.</p><div class="writeup-bottom"><span class="writeup-status">TEMPLATE</span><a href="writeups/repossessed.html">Read write-up ↗</a></div></article>
+        <article class="writeup-card" data-platform="htb"><div class="writeup-meta"><span>HACK THE BOX</span><span>LAB NOTES</span></div><h3>Challenge write-up template</h3><p>Document enumeration, observations, hypotheses, exploitation steps and remediation lessons.</p><div class="writeup-bottom"><span class="writeup-status">TEMPLATE</span><a href="#contact">Add article ↗</a></div></article>
+        <article class="writeup-card" data-platform="other"><div class="writeup-meta"><span>OTHER PLATFORMS</span><span>LEARNING NOTES</span></div><h3>Technical notes & CTFs</h3><p>A place for forensic analysis, network investigations, malware triage and other challenge notes.</p><div class="writeup-bottom"><span class="writeup-status">TEMPLATE</span><a href="#contact">Add article ↗</a></div></article>
+      </div>
+      <p class="small-note">Replace these sample cards with your own published write-ups. Always check each platform's rules before sharing solutions or flags.</p>
+    </section>
+
+    <section class="section process-section">
+      <div class="section-heading"><span class="section-index">04 / HOW I WORK</span><h2>Method over <span>guesswork.</span></h2></div>
+      <div class="process-grid"><div><span>01</span><h3>Observe</h3><p>Collect logs, identify relevant artifacts and understand the environment.</p></div><div><span>02</span><h3>Investigate</h3><p>Correlate evidence, test hypotheses and distinguish facts from assumptions.</p></div><div><span>03</span><h3>Document</h3><p>Build a clear timeline and communicate findings, impact and recommendations.</p></div><div><span>04</span><h3>Improve</h3><p>Capture lessons learned and turn them into better detection and prevention.</p></div></div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-heading"><span class="section-index">05 / CONTACT</span><h2>Let's talk <span>security.</span></h2><p>Interested in my work or have a cybersecurity opportunity? Feel free to reach out.</p></div>
+      <div class="contact-panel"><div><span class="fact-label">BASED IN</span><strong>Dakar, Senegal</strong></div><div><span class="fact-label">EMAIL</span><strong>Add your professional email</strong></div><div class="contact-links"><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://tryhackme.com/p/NewCastle.2.0" target="_blank" rel="noreferrer">TryHackMe ↗</a></div></div>
+    </section>
+  </main>
+  <footer><a class="brand" href="#home"><span class="brand-mark">A<span>.</span></span><span>ADAMA LO</span></a><span>Built with curiosity and a security mindset.</span><span class="mono">© <span id="year"></span> ADAMA LO</span></footer>
+  <script src="assets/script.js"></script>
+</body>
+</html>
